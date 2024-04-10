@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h1> Flaggen Quiz</h1>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <img id="Hearts" src="/HeartsBilder/0Fehler.png" alt="Hearts">
+    <img src="/Bilder/ad.png" id="angezeigteFlagge" class="Flaggen"> <br>
+<div id = "allbuttons", class="btn-group">
+    <button class="button" onclick="check(this)" id="Button0">Click me</button>
+    <button class="button" onclick="check(this)" id="Button1">Click me</button>
+    <button class="button" onclick="check(this)" id="Button2">Click me</button>
+    <button class="button" onclick="check(this)" id="Button3">Click me</button>
+</div>
+<br>
+<span class="Score"> Score:</span> <span id="ScoreAnzeige">0</span> 
+<span id="StreakDisplay">Streak: 0</span>
+<br>
+<audio id="correctSound">
+    <source src="/SoundEffects/correct.mp3" type="audio/mpeg">
+</audio>
+<audio id="wrongSound">
+    <source src="/SoundEffects/WRONG2.mp3" type="audio/mpeg">
+</audio>
+<audio id="deathSound">
+    <source src="/SoundEffects/WRONG1.mp3" type="audio/mpeg">
+</audio>
+<div id="Feedback" hidden>
+<h2 id="FeedbackText">Well done!</h2>
+<span id="totalScore1">0</span>
+<br>
+<button onclick="restart()">Try Again?</button>
+</div>
+
+
+</body>
+<script src="script.js"></script>
+</html>
